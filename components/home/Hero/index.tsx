@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HERO_SLIDES } from "../../../constants";
 import { GraduationCap } from "lucide-react";
@@ -18,7 +18,7 @@ const Hero = () => {
   const slide = HERO_SLIDES[currentSlide];
 
   return (
-    <section className="relative h-[85vh] w-full pt-44 overflow-hidden -mt-24">
+    <section className="relative h-[85vh] w-full pt-28 overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -43,7 +43,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-white text-sm font-semibold tracking-[0.2em] uppercase mb-4"
+          className="text-white text-sm font-semibold tracking-[0.2em] uppercase mb-2"
         >
           {slide.subtitle}
         </motion.span>
@@ -53,17 +53,31 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-white text-5xl md:text-7xl font-bold max-w-4xl leading-tight mb-8"
+          className="text-white text-5xl md:text-6xl font-bold max-w-4xl leading-tight mb-2"
         >
           {slide.title}
         </motion.h1>
+
+        {/* Social Proof Badge */}
+        <motion.div 
+          key={`badge-${currentSlide}`}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2.5 rounded-full flex items-center gap-3 text-white text-[13px] font-medium mb-2"
+        >
+          <div className="bg-emerald-500 p-1 rounded-full">
+            <GraduationCap size={16} />
+          </div>
+          Supernovas Academy is licensed by the National Universities Commission
+        </motion.div>
 
         <motion.p
           key={`desc-${currentSlide}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-white/90 text-lg md:text-xl mb-10 max-w-2xl font-medium"
+          className="text-white/90 text-lg md:text-xl mb-4 max-w-2xl font-medium"
         >
           {slide.description}
         </motion.p>
@@ -79,20 +93,6 @@ const Hero = () => {
         >
           {slide.buttonText}
         </motion.button>
-      </div>
-
-      {/* Social Proof Badge */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2.5 rounded-full flex items-center gap-3 text-white text-[13px] font-medium"
-        >
-          <div className="bg-emerald-500 p-1 rounded-full">
-            <GraduationCap size={16} />
-          </div>
-          Supernovas Academy is licensed by the National Universities Commission
-        </motion.div>
       </div>
 
       {/* Slide Indicators */}
