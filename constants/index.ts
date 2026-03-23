@@ -1,7 +1,7 @@
 export const TOP_NAV_LINKS = [
-  { label: "Coworking Space", href: "#" },
-  { label: "Community Centre Booking", href: "#" },
-  { label: "Merch Store", href: "#" },
+  { label: "CBT Practice", href: "#" },
+  { label: "Past Questions", href: "#" },
+  { label: "Study Materials", href: "#" },
   { label: "E-Library", href: "#" },
   { label: "My Classroom", href: "#" },
   { label: "My Profile", href: "#" },
@@ -9,37 +9,38 @@ export const TOP_NAV_LINKS = [
 
 export const MAIN_NAV_LINKS = [
   {
-    label: "About Supernovas",
+    label: "Exam Categories",
     href: "#",
     hasMegaMenu: true,
     subLinks: [
-      { label: "Our Story", href: "#" },
-      { label: "Mission & Vision", href: "#" },
-      { label: "Leadership", href: "#" },
+      { label: "JAMB (UTME)", href: "#" },
+      { label: "WAEC (SSCE)", href: "#" },
+      { label: "NECO (SSCE)", href: "#" },
+      { label: "Post-UTME", href: "#" },
     ],
   },
   {
-    label: "Faculties",
+    label: "Resources",
     href: "#",
     hasMegaMenu: true,
     subLinks: [
-      { label: "Computing", href: "#" },
-      { label: "Management and Social Science", href: "#" },
-      { label: "Media and Communication", href: "#" },
+      { label: "Syllabus", href: "#" },
+      { label: "Timetables", href: "#" },
+      { label: "Recommended Books", href: "#" },
     ],
   },
   {
-    label: "Admissions",
+    label: "Courses",
     href: "#",
     hasMegaMenu: true,
   },
   {
-    label: "Tuition",
+    label: "Pricing",
     href: "#",
     hasMegaMenu: false,
   },
   {
-    label: "Masters",
+    label: "Success Stories",
     href: "#",
     hasMegaMenu: true,
     badge: "NEW",
@@ -49,29 +50,29 @@ export const MAIN_NAV_LINKS = [
 export const HERO_SLIDES = [
   {
     id: "01",
-    title: "Be Outstanding with a Supernovas Degree",
+    title: "Ace Your JAMB, WAEC & NECO Exams",
     subtitle: "Supernovas Academy",
-    description: "Apply with WAEC/NECO. Start Classes in May 2026.",
-    buttonText: "View Programmes",
-    image: "https://images.unsplash.com/photo-1523050335192-ce1dee00e4cd?q=80&w=2070&auto=format&fit=crop", // Graduation ceremony
+    description: "Personalized online coaching and CBT practice to help you score high. Join 50,000+ successful students.",
+    buttonText: "Start Prep Now",
+    image: "/images/hero/hero_study_student.png",
   },
   {
     id: "02",
-    title: "Shape Your Future with Modern Learning",
+    title: "Master Post-UTME with Expert Guidance",
     subtitle: "Supernovas Academy",
-    description: "Flexible, accessible, and high-quality education for all.",
-    buttonText: "Explore Courses",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop", // Modern classroom
+    description: "Get access to institution-specific past questions and interactive live sessions.",
+    buttonText: "View Courses",
+    image: "/images/hero/hero_cbt_interface.png",
   },
   {
     id: "03",
-    title: "Join a Community of Achievers",
+    title: "Practice Anywhere, Success Everywhere",
     subtitle: "Supernovas Academy",
-    description: "Connect with industry leaders and peer mentors.",
-    buttonText: "Apply Now",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop", // Students studying
+    description: "Access our CBT platform on any device. Track your progress and boost your confidence.",
+    buttonText: "Try Free Mock",
+    image: "/images/hero/hero_successful_students.png",
   },
 ];
 
-export const ANNOUNCEMENT_TEXT = "Admission for the May 2026 cohort is ongoing. Apply Now!";
+export const ANNOUNCEMENT_TEXT = "JAMB 2026 Prep Classes are now open. Enroll today and boost your score!";
 export const PHONE_NUMBER = "+234 913 234 0000";
