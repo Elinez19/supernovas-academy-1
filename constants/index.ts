@@ -13,10 +13,10 @@ export const MAIN_NAV_LINKS = [
     href: "#",
     hasMegaMenu: true,
     subLinks: [
-      { label: "JAMB (UTME)", href: "#" },
-      { label: "WAEC (SSCE)", href: "#" },
-      { label: "NECO (SSCE)", href: "#" },
-      { label: "Post-UTME", href: "#" },
+      { label: "JAMB (UTME)", href: "/exams/jamb" },
+      { label: "WAEC (SSCE)", href: "/exams/waec" },
+      { label: "NECO (SSCE)", href: "/exams/neco" },
+      { label: "Post-UTME", href: "/exams/post-utme" },
     ],
   },
   {

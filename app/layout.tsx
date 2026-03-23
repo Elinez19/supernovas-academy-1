@@ -32,7 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <Navbar />
-        <main className="pt-[140px]">{children}</main>
+        <main className="pt-[136px]">{children}</main>
         <Footer />
       </body>
     </html>
