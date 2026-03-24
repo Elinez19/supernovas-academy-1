@@ -25,7 +25,7 @@ export default async function ExamCategoryPage({ params }: PageProps) {
       
       {/* Additional CTA or Newsletter section could go here */}
       <section className="py-20 bg-slate-900 text-white text-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-10 lg:px-20 max-w-7xl">
            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to start your journey?</h2>
            <p className="text-slate-400 mb-10 max-w-2xl mx-auto">
              Join thousands of students who have achieved excellence with Supernovas Academy.

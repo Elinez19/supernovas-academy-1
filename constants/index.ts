@@ -24,9 +24,9 @@ export const MAIN_NAV_LINKS = [
     href: "#",
     hasMegaMenu: true,
     subLinks: [
-      { label: "Syllabus", href: "#" },
-      { label: "Timetables", href: "#" },
-      { label: "Recommended Books", href: "#" },
+      { label: "Syllabus", href: "/resources/syllabus" },
+      { label: "Timetables", href: "/resources/timetables" },
+      { label: "Recommended Books", href: "/resources/books" },
     ],
   },
   {

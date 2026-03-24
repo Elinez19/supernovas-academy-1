@@ -17,7 +17,7 @@ interface PricingSectionProps {
 export const PricingSection = ({ pricing, color }: PricingSectionProps) => {
   return (
     <section className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-10 lg:px-20 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Affordable Learning Plans</h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">

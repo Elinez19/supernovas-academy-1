@@ -25,7 +25,7 @@ export const ExamHero = ({ data }: ExamHeroProps) => {
         />
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 md:px-10 lg:px-20 max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

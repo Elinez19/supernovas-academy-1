@@ -11,7 +11,7 @@ interface SubjectGridProps {
 export const SubjectGrid = ({ subjects, color }: SubjectGridProps) => {
   return (
     <section className="py-16 bg-slate-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-10 lg:px-20 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Browse Subjects</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
